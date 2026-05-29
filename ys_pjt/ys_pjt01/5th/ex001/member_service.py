@@ -14,7 +14,7 @@ while True:
         print("숫자만 입력 가능합니다.")
         continue
     if selectedMenuNum == 1:
-        member = sign_up(member)
+        sign_up(member)
         
 
     elif selectedMenuNum == 2:

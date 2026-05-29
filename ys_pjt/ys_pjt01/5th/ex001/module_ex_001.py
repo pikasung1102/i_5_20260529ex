@@ -33,6 +33,9 @@ def sign_up(member):
     
     
 def sign_in(member):
+    if not isinstance(member, dict):
+        print("로그인 시스템에 오류가 발생했습니다. (회원 데이터가 올바르지 않습니다.)")
+        return None
     print('로그인하실 UserID, UserPW를 입력해주세요. ')
     Login_ID = input('UserId: ')
     Login_PW = input('UserPw: ')
